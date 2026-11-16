@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Elisha Oyeyipo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="navbar container">
+    <a class="logo" href="index.html">EO</a>
+    <button class="menu-button" id="menuButton" type="button">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+
+<h1 class="page-title">Contact Me</h1>
+<p class="subtitle">Thank you for visiting my website. You can leave a message below.</p>
+<form id="contactForm" novalidate>
+  <label for="name">Full Name</label>
+  <input id="name" type="text" placeholder="Enter your name">
+  <label for="email">Email Address</label>
+  <input id="email" type="text" placeholder="Enter your email">
+  <label for="message">Message</label>
+  <textarea id="message" placeholder="Write your message"></textarea>
+  <button class="button" type="submit">Submit</button>
+  <p class="message" id="feedback" aria-live="polite"></p>
+</form>
+
+</main>
+<footer>
+  <p>&copy; <span id="year"></span> Elisha Jesuloluwa Oyeyipo</p>
+  <p>Student Portfolio</p>
+</footer>
+</body>
+</html>

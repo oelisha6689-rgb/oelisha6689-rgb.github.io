@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Elisha Oyeyipo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="navbar container">
+    <a class="logo" href="index.html">EO</a>
+    <button class="menu-button" id="menuButton" type="button">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+
+<h1 class="page-title">Academic Planner</h1>
+<p class="subtitle">Use this page to add and manage your study tasks.</p>
+<section>
+  <h2>My Study Tasks</h2>
+  <form class="planner-form" id="plannerForm">
+    <input type="text" id="taskInput" placeholder="Enter a task..." aria-label="Enter a study task">
+    <button class="button" type="submit">Add Task</button>
+  </form>
+  <p class="note">Your tasks are saved in this browser using JavaScript local storage.</p>
+  <p id="noTasks">No tasks added yet.</p>
+  <ul class="task-list" id="taskList"></ul>
+</section>
+<section class="simple-section">
+  <h2>Sample Weekly Study Plan</h2>
+  <table>
+    <tr><th>Day</th><th>Activity</th></tr>
+    <tr><td>Monday</td><td>Read lecture notes</td></tr>
+    <tr><td>Tuesday</td><td>Practise computer skills</td></tr>
+    <tr><td>Wednesday</td><td>Learn a new topic</td></tr>
+    <tr><td>Thursday</td><td>Work on a small project</td></tr>
+    <tr><td>Friday</td><td>Revise the week's work</td></tr>
+  </table>
+  <p class="note">This is only a sample timetable and can be changed to suit your actual school schedule.</p>
+</section>
+
+</main>
+<footer>
+  <p>&copy; <span id="year"></span> Elisha Jesuloluwa Oyeyipo</p>
+  <p>Student Portfolio</p>
+</footer>
+</body>
+</html>

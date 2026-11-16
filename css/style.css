@@ -1,0 +1,206 @@
+
+/* Simple beginner-friendly student portfolio */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.navbar {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.logo {
+  color: #111;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-links a:hover, .nav-links a.active {
+  color: #000;
+  text-decoration: underline;
+}
+.menu-button {
+  display: none;
+  padding: 7px 12px;
+  border: 1px solid #aaa;
+  background: white;
+  cursor: pointer;
+}
+main { padding: 35px 0 55px; min-height: 75vh; }
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 25px 0 35px;
+  border-bottom: 1px solid #ddd;
+}
+.intro-text { flex: 1; }
+.intro h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 8px 0 12px;
+  color: #111;
+}
+.intro p { color: #555; max-width: 600px; }
+.profile-picture {
+  width: 205px;
+  height: 225px;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 1px solid #ccc;
+  filter: grayscale(100%);
+}
+.small-heading {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+}
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 8px 7px 0 0;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #111;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button:hover { background: white; color: #111; }
+h1.page-title {
+  font-size: 28px;
+  margin: 0 0 5px;
+  color: #111;
+}
+.subtitle { color: #666; margin: 0 0 25px; }
+section { margin-bottom: 28px; }
+h2 { font-size: 21px; margin: 0 0 10px; color: #111; }
+h3 { font-size: 17px; margin: 0 0 7px; }
+p { margin-top: 0; }
+.simple-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+.skill-list li {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.project {
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+}
+.project:last-child { border-bottom: 0; }
+.project-label {
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.project p { color: #555; margin-bottom: 8px; }
+.note { font-size: 13px; color: #666; }
+.timeline-item { margin: 0 0 17px; }
+.timeline-item strong { display: block; }
+form { max-width: 600px; }
+label { display: block; margin: 13px 0 5px; font-weight: bold; }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font: inherit;
+}
+textarea { min-height: 120px; resize: vertical; }
+input:focus, textarea:focus { outline: 1px solid #222; }
+.planner-form { display: flex; gap: 8px; max-width: 650px; }
+.planner-form input { flex: 1; }
+.task-list { padding: 0; list-style: none; max-width: 650px; }
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 2px;
+}
+.task-item.completed span { text-decoration: line-through; color: #777; }
+.task-actions { display: flex; gap: 6px; }
+.task-actions button {
+  padding: 5px 8px;
+  background: white;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 9px; text-align: left; }
+th { background: #f1f1f1; }
+footer {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 18px 10px;
+  color: #666;
+  font-size: 13px;
+}
+.message { font-size: 14px; font-weight: bold; }
+@media (max-width: 700px) {
+  .navbar { padding: 12px 0; }
+  .menu-button { display: block; }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 0 12px;
+  }
+  .nav-links.show { display: flex; }
+  .intro { flex-direction: column-reverse; align-items: flex-start; gap: 18px; }
+  .profile-picture { width: 165px; height: 180px; }
+  .intro h1 { font-size: 27px; }
+  .columns { grid-template-columns: 1fr; gap: 10px; }
+  .planner-form { flex-direction: column; }
+  .task-item { align-items: flex-start; flex-direction: column; }
+  table { font-size: 13px; }
+}
